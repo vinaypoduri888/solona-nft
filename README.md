@@ -241,7 +241,3 @@ git push
 - **Never commit `.env` or `wallet.json`.** `.env` holds your Pinata API secret; `wallet.json` holds your wallet's private key. Anyone with either can act as you (spend your Pinata quota, or — on mainnet — drain funds). Both are already excluded via `.gitignore` in this repo.
 - **If a secret was ever saved to a file before `.gitignore` existed**, it's good practice to treat it as compromised: regenerate a new Pinata API key/secret from the Pinata dashboard and delete the old one, and generate a fresh wallet with `wallet.js` if you ever plan to use it beyond devnet.
 - This project only ever touches **devnet**, so a leaked devnet wallet key has no real monetary value — but the habit of never committing secret keys matters just as much for when you eventually work with mainnet.
-
-## License
-
-This project is for educational purposes. Add a license of your choice (e.g. [MIT](https://choosealicense.com/licenses/mit/)) if you plan to share or accept contributions.
